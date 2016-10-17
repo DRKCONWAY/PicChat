@@ -34,5 +34,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to your camera in order to upload pics.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We need access to your microphone in order to video chat.</string>
 </dict>
 </plist>

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CameraVC.swift
 //  PicChat
 //
 //  Created by D on 10/17/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CameraVC: AAPLCameraViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
