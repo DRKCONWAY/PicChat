@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,25 +16,50 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFf-d4-sSE" userLabel="PreviewView" customClass="AAPLPreviewView">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRu-wb-bRw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="80i-2V-adL"/>
+                                    <constraint firstAttribute="height" constant="52" id="nvH-iH-sWe"/>
+                                </constraints>
+                                <state key="normal" image="camera_icon_snap"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyD-Kr-hwd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="9yJ-pw-szO"/>
+                                    <constraint firstAttribute="width" constant="74" id="G03-Gp-Puq"/>
+                                </constraints>
+                                <state key="normal" image="createsnap_btn"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KFf-d4-sSE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FcZ-9s-8CG"/>
                             <constraint firstAttribute="trailing" secondItem="KFf-d4-sSE" secondAttribute="trailing" id="JP9-yP-pLK"/>
                             <constraint firstItem="KFf-d4-sSE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ksv-eF-9mn"/>
+                            <constraint firstItem="XyD-Kr-hwd" firstAttribute="centerX" secondItem="KFf-d4-sSE" secondAttribute="centerX" id="MNq-Zx-H37"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XyD-Kr-hwd" secondAttribute="bottom" constant="5" id="OVq-G5-c67"/>
                             <constraint firstItem="KFf-d4-sSE" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="StJ-1e-02g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oRu-wb-bRw" secondAttribute="trailing" constant="-7" id="hs8-l0-sMg"/>
+                            <constraint firstItem="oRu-wb-bRw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="3" id="oJB-YC-3vP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="previewView" destination="KFf-d4-sSE" id="bMX-V6-z7g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="30" y="35.91549295774648"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera_icon_snap" width="29" height="24"/>
+        <image name="createsnap_btn" width="30" height="30"/>
+    </resources>
 </document>

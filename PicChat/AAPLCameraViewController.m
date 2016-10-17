@@ -25,6 +25,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 @interface AAPLCameraViewController () <AVCaptureFileOutputRecordingDelegate>
 
 // For use in the storyboards.
+
 @property (nonatomic, weak) IBOutlet UILabel *cameraUnavailableLabel;
 @property (nonatomic, weak) IBOutlet UIButton *resumeButton;
 @property (nonatomic, weak) IBOutlet UIButton *stillButton;
