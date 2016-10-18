@@ -62,6 +62,7 @@
 		0316CA1D1DB566800046D3FC /* PicChat */ = {
 			isa = PBXGroup;
 			children = (
+				0316CA3A1DB59C590046D3FC /* Protocols */,
 				0316CA371DB567A10046D3FC /* View */,
 				0316CA381DB567B40046D3FC /* Controller */,
 				0316CA1E1DB566800046D3FC /* AppDelegate.swift */,
@@ -69,7 +70,6 @@
 				0316CA251DB566800046D3FC /* Assets.xcassets */,
 				0316CA271DB566800046D3FC /* LaunchScreen.storyboard */,
 				0316CA2A1DB566800046D3FC /* Info.plist */,
-				0316CA391DB5691D0046D3FC /* AAPLCameraVCDelegate.h */,
 				0316CA301DB566EB0046D3FC /* PicChat-Bridging-Header.h */,
 			);
 			path = PicChat;
@@ -92,6 +92,14 @@
 				0316CA201DB566800046D3FC /* CameraVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		0316CA3A1DB59C590046D3FC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0316CA391DB5691D0046D3FC /* AAPLCameraVCDelegate.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

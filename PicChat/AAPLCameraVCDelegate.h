@@ -11,7 +11,6 @@
 
 @protocol AAPLCameraVCDelegate <NSObject>
 
-
 -(void)shouldEnableRecordUI:(BOOL)enable;
 -(void)shouldEnableCameraUI:(BOOL)enable;
 -(void)canStartRecording;

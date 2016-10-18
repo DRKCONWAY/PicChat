@@ -28,6 +28,9 @@
                                     <constraint firstAttribute="height" constant="52" id="nvH-iH-sWe"/>
                                 </constraints>
                                 <state key="normal" image="camera_icon_snap"/>
+                                <connections>
+                                    <action selector="changeCameraButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1e-Iu-fvq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyD-Kr-hwd">
                                 <constraints>
@@ -35,6 +38,9 @@
                                     <constraint firstAttribute="width" constant="74" id="G03-Gp-Puq"/>
                                 </constraints>
                                 <state key="normal" image="createsnap_btn"/>
+                                <connections>
+                                    <action selector="recordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7R9-NA-6hz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,7 +56,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="oRu-wb-bRw" id="3CW-5S-4bw"/>
                         <outlet property="previewView" destination="KFf-d4-sSE" id="bMX-V6-z7g"/>
+                        <outlet property="recordButton" destination="XyD-Kr-hwd" id="mzF-xt-9LG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
